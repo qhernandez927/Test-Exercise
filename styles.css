@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.product-form, .contact-form  {
+    box-sizing: border-box;
+    border: 1px solid black;
+    padding: 10px;
+
+    background-color: cornflowerblue;
+    border-radius: 25px;
+    box-shadow: 0px 5px rgba(0, 0, 0, 0.2) ;
+}
+    
+
+.submit {
+    background-color: gold;
+    border-radius: 25px;
+    border-color: black;
+    text-align: center;
+}

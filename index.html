@@ -8,37 +8,48 @@
   <script src="script.js"></script>
 </head>
 <body>
-<div class = "form-box">  
-  <header>Product Suggestion</header>
+  <div class="container">
+      <!--product description form-->  
+    <div class = "product-form">  
+      <details>
+      <summary>Product Suggestion</summary> <br>
+        <div class="form-content">
+          <form>
+            <label>Name</label><br>
+            <input type="text" name="productname"/><br>
+            <label>Email</label><br>
+            <input type = "email" name="email"/><br>
+            <label>Describe your product</label><br>
+            <input type="text" name="description-list"><br>
+            <input class = "submit" type="button" value="Submit">
+          </form>
+        </div>
+      </details>
+    </div>
     <br>
-  <form>
-    <label>Name</label><br>
-    <input type="text" name="productname"/><br>
-    <label>Email</label><br>
-    <input type = "email" name="email"/><br>
-    <label>Describe your product</label><br>
-    <input type="text" name="description-list">
-  </form>
-</div>
-<br>
-<div>
-  <header>Contact Us!</header><br>
-  <form>
-      <label>Name</label><br>
-      <input type="text" name="productname"/><br>
-      <label>Email</label><br>
-      <input type = "email" name="email"/><br>
-      <label>Contact Reason</label><br>
-      <input type="radio" id="order-question" name="contact-reason" value="order-question">
-      <label>Order Question</label><br>
-      <input type="radio" id="website-feedback" name="contact-reason" value="website-feedback">
-      <label>Website Feedback</label><br>
-      <input type="radio" id="trouble-find" name="contact-reason" value="trouble-finding-product">
-      <label>Trouble Finding a Product</label>
-      </form>
 
-
-
-</div>
+    <!--contact us form-->
+    <div class= "contact-form">
+      <details>
+      <summary>Contact Us!</summary><br>
+      <div class="form-content" >
+        <form>
+            <label>Name</label><br>
+            <input type="text" name="productname"/><br>
+            <label>Email</label><br>
+            <input type = "email" name="email"/><br>
+            <label>Contact Reason</label><br>
+            <input type="radio" id="order-question" name="contact-reason" value="order-question">
+            <label>Order Question</label><br>
+            <input type="radio" id="website-feedback" name="contact-reason" value="website-feedback">
+            <label>Website Feedback</label><br>
+            <input type="radio" id="trouble-find" name="contact-reason" value="trouble-finding-product">
+            <label>Trouble Finding a Product</label><br>
+            <input class = "submit" type="button" value="Submit">
+        </form>
+      </div>
+      </details>
+    </div>
+  </div>
 </body>
 </html>
