@@ -30,7 +30,13 @@ body {
     text-align: center;
 }
 
-.form-content{
+.product-form-content{
+    text-align: center;
+    font-family: georgia;
+    display: none;
+}
+
+.contact-form-content{
     text-align: center;
     font-family: georgia;
     display: none;
