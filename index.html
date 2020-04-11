@@ -38,12 +38,12 @@
             <label>Email</label><br>
             <input type = "email" name="email"/><br>
             <label>Contact Reason</label><br>
-            <input type="radio" id="order-question" name="contact-reason" value="order-question">
-            <label>Order Question</label><br>
-            <input type="radio" id="website-feedback" name="contact-reason" value="website-feedback">
-            <label>Website Feedback</label><br>
-            <input type="radio" id="trouble-find" name="contact-reason" value="trouble-finding-product">
-            <label>Trouble Finding a Product</label><br>
+            <select id="contact-reason" name="contact-reason">
+              <option value="order-question">Order Question</option>
+              <option value="website-feedback">Website Feedback</option>
+              <option value="trouble-finding-product">Trouble Finding a Product</option>
+            </select>
+            
               <div class="submit-btn">
                 <input type="button" value="Submit">
               </div>
