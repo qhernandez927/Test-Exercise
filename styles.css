@@ -33,6 +33,7 @@ body {
 .form-content{
     text-align: center;
     font-family: georgia;
+    display: none;
 }
 
 header {
@@ -50,4 +51,6 @@ select {
 }
 textarea {
     height: 100px;
+    width: 500px;
+    border-radius: 5px;
 }
