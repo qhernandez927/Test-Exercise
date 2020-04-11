@@ -15,11 +15,11 @@
         <div class="form-content">
           <form>
             <label>Name</label><br>
-            <input type="text" name="productname"/><br>
+            <input type="text" name="productname"/><br><br>
             <label>Email</label><br>
-            <input type = "email" name="email"/><br>
+            <input type = "email" name="email"/><br><br>
             <label>Describe your product</label><br>
-            <input type="text" name="description-list"><br>
+            <textarea id="describe-product" name="describe" placeholder="Describe your product"></textarea><br>
               <div class="submit-btn">
                 <input type="button" value="Submit">
               </div>
@@ -34,19 +34,21 @@
       <div class="form-content" >
         <form>
             <label>Name</label><br>
-            <input type="text" name="productname"/><br>
+            <input type="text" name="productname"/><br><br>
             <label>Email</label><br>
-            <input type = "email" name="email"/><br>
+            <input type = "email" name="email"/><br><br>
             <label>Contact Reason</label><br>
-            <select id="contact-reason" name="contact-reason">
-              <option value="order-question">Order Question</option>
-              <option value="website-feedback">Website Feedback</option>
-              <option value="trouble-finding-product">Trouble Finding a Product</option>
-            </select>
-            
-              <div class="submit-btn">
-                <input type="button" value="Submit">
-              </div>
+              <select id="contact-reason" name="contact-reason">
+                <option value="order-question">Order Question</option>
+                <option value="website-feedback">Website Feedback</option>
+                <option value="trouble-finding-product">Trouble Finding a Product</option>
+              </select>
+              <br>
+              <br>
+            <textarea id="feedback-box"  name="feedback" placeholder="Give us some feedback"></textarea>
+            <div class="submit-btn">
+              <input type="button" value="Submit">
+            </div>
         </form>
       </div>
     </div>
