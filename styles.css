@@ -1,21 +1,45 @@
+
+body {
+    background-color: tan;
+}
+
 .container{
     display: flex;
-    justify-content: space-evenly;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+        width: 100%;
+        margin: 10% 0;
+        align-items: center
 }
 .product-form, .contact-form  {
     box-sizing: border-box;
     border: 1px solid black;
     padding: 10px;
 
-    background-color: cornflowerblue;
+    background-color: cornsilk;
     border-radius: 25px;
     box-shadow: 0px 5px rgba(0, 0, 0, 0.2) ;
+    font-family: Georgia;
 }
     
 
-.submit {
-    background-color: gold;
+.submit-btn {
     border-radius: 25px;
     border-color: black;
     text-align: center;
+}
+
+.form-content{
+    text-align: center;
+    font-family: georgia;
+}
+
+header {
+    text-align: center;
+}
+
+input{
+    border-radius: 25px;
+    box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
 }
