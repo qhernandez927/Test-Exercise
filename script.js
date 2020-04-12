@@ -6,6 +6,7 @@ window.onload = function (){
 
     contactUsClick.addEventListener("click", displayContactForm);
     productSuggestionClick.addEventListener("click", displayProductform);
+    
 
     function displayProductform() {
         document.querySelector(".product-form-content").style.display = "block";
