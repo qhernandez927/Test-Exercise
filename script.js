@@ -10,7 +10,7 @@ window.onload = function (){
     let contactEmail = document.querySelector('input[name=contact-email]');
 
     // Product Form Variables
-    let productButton =document.getElementById('product-button');
+    let productButton = document.getElementById('product-button');
     let productFormContent = document.querySelector(".product-form-content");
     let productUsername = document.querySelector("input[name=product-username]");
     let productUserEmail = document.querySelector("input[name=product-email]");
