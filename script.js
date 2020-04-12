@@ -22,7 +22,7 @@ window.onload = function (){
     contactUsClick.addEventListener("click", displayContactForm);
     productSuggestionClick.addEventListener("click", displayProductform);
     productButton.addEventListener("click", productSuggestionFormValidation);
-    contactButton.addEventListener("click", )
+    contactButton.addEventListener("click", contactFormValidation);
             
     // Functions 
     function displayProductform() {
@@ -33,20 +33,18 @@ window.onload = function (){
         if(productUsername.value === '' || productUserEmail.value === '' || prodcutDescription.value === '') {
             alert("All fields are required");
             return false;
-            // event.preventDefault();
         } else {
             return true;
         }
     }
 
-    // productSuggestionFormValidation(productForm);
 
     function displayContactForm() {
         contactFormContent.style.display = "block";
     }
 
-    function contactFormValidation(){
-        if(contactUsername === '' || contactEmail === '' || contactReason === '' || contactFeedback === '') {
+    function contactFormValidation() {
+        if(contactUsername.value === '' || contactEmail.value === '' || contactReason.value === '' || contactFeedback.value === '') {
             alert("All fields are required");
             return false;
         } else {
