@@ -1,18 +1,56 @@
 window.onload = function (){
-    let contentForms = document.querySelectorAll(".form-content");
-    const troubleFindingProduct = document.querySelector('.trouble-finding-product');
+    
+    // Contact Form Variables
+    let contactButton = document.getElementById('contact-button');
+    let contactFormContent = document.querySelector(".contact-form-content");
+    let contactReason = document.getElementById("contact-reason");
+    let contactFeedback = document.getElementById("feedback-box");
+    let troubleFindingProduct = document.querySelector('.trouble-finding-product');
     let contactUsClick = document.getElementById("contact-us");
+    let contactUsername = document.querySelector('input[name=contact-username]');
+    let contactEmail = document.querySelector('input[name=contact-email]');
+
+    // Product Form Variables
+    let productButton =document.getElementById('product-button');
+    let productFormContent = document.querySelector(".product-form-content");
+    let productUsername = document.querySelector("input[name=product-username]");
+    let productUserEmail = document.querySelector("input[name=product-email]");
+    let prodcutDescription = document.getElementById("describe-product");
     let productSuggestionClick = document.getElementById("product-suggestion");
 
+    // Event handlers and listeners 
     contactUsClick.addEventListener("click", displayContactForm);
     productSuggestionClick.addEventListener("click", displayProductform);
-    
-
+    productButton.addEventListener("click", productSuggestionFormValidation);
+    contactButton.addEventListener("click", )
+            
+    // Functions 
     function displayProductform() {
-        document.querySelector(".product-form-content").style.display = "block";
+        productFormContent.style.display = "block";
     }
 
+    function productSuggestionFormValidation() {
+        if(productUsername.value === '' || productUserEmail.value === '' || prodcutDescription.value === '') {
+            alert("All fields are required");
+            return false;
+            // event.preventDefault();
+        } else {
+            return true;
+        }
+    }
+
+    // productSuggestionFormValidation(productForm);
+
     function displayContactForm() {
-        document.querySelector(".contact-form-content").style.display = "block";
+        contactFormContent.style.display = "block";
+    }
+
+    function contactFormValidation(){
+        if(contactUsername === '' || contactEmail === '' || contactReason === '' || contactFeedback === '') {
+            alert("All fields are required");
+            return false;
+        } else {
+            return true;
+        }
     }
 };

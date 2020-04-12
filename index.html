@@ -13,16 +13,14 @@
     <div id="product-suggestion"class = "product-form">  
       <header>Product Suggestion</header> <br>
         <div class="product-form-content" >
-          <form>
-            <label>Name</label><br>
-            <input type="text" name="product-username"/><br><br>
-            <label>Email</label><br>
-            <input type = "email" name="product-email"/><br><br>
-            <label>Describe your product</label><br>
+          <form id= "form-product" action="">
+            <label for="product-username" >Name</label><br>
+            <input id= "product-username"type="text" name="product-username"/><br><br>
+            <label for="product-email">Email</label><br>
+            <input id= "product-email" type ="email" name="product-email"/><br><br>
+            <label for="describe-product">Describe your product</label><br>
             <textarea id="describe-product" name="describe" placeholder="Describe your product"></textarea><br>
-              <div class="submit-btn">
-                <input type="button" value="Submit">
-              </div>
+            <button id="product-button"type="button" value="Submit">Submit</button>  
           </form>
         </div>
     </div>
@@ -32,12 +30,12 @@
     <div id="contact-us" class= "contact-form">
       <header>Contact Us</header><br>
       <div class="contact-form-content" >
-        <form>
-            <label>Name</label><br>
-            <input type="text" name="contact-username"/><br><br>
-            <label>Email</label><br>
-            <input type = "email" name="contact-email"/><br><br>
-            <label>Contact Reason</label><br>
+        <form id= "form-contact" action="" >
+            <label for="contact-username" >Name</label><br>
+            <input id="contact-username" type="text" name="contact-username"/><br><br>
+            <label for="contact-email">Email</label><br>
+            <input id="contact-email" type = "email" name="contact-email"/><br><br>
+            <label for="contact-reason">Contact Reason</label><br>
               <select id="contact-reason" name="contact-reason">
                 <option value="order-question">Order Question</option>
                 <option value="website-feedback">Website Feedback</option>
@@ -45,10 +43,8 @@
               </select>
               <br>
               <br>
-            <textarea id="feedback-box"  name="feedback" placeholder="Give us some feedback"></textarea>
-            <div class="submit-btn">
-              <input type="button" value="Submit">
-            </div>
+            <textarea id="feedback-box"  name="feedback" placeholder="Give us some feedback"></textarea><br>
+            <button id="contact-button" type="button" value="Submit">Submit</button>
         </form>
       </div>
     </div>
